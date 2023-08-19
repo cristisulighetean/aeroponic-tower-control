@@ -2,11 +2,11 @@
 
 This is a simple control system for an aeroponic tower to control the pump that is distributing nutrients to the plants.
 
-### Hardware used:
+## Hardware used
 
-    - ESP01 with relay module (ESP8266)
-    - FTDI converter (used to program the ESP01)
-    - 5V 2A power supply to power up the ESP from 220V
+- ESP01 with relay module (ESP8266)
+- FTDI converter (used to program the ESP01)
+- 5V 2A power supply to power up the ESP from 220V
 
 ## Programming the ESP01
 
