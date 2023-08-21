@@ -15,16 +15,16 @@ long remainingTimeOff = 0;
 
 
 void relayControl() {
-  // Get current time
-  unsigned long now = millis();
-
-  // Sync relayOn with actual relay
+  // Sync relayOn with actual relay (also works with manual mode)
   if (relayOn) {
-    digitalWrite(relayOn, HIGH);
+    digitalWrite(relayPin, HIGH);
   }
   else {
-    digitalWrite(relayOn, LOW);
+    digitalWrite(relayPin, LOW);
   }
+
+  // Get current time
+  unsigned long now = millis();
 
   // Handle time update in automatic mode
   if (!controlMode) { // Automatic mode logic
@@ -51,7 +51,5 @@ void relayControl() {
         Serial.println("AUTO: time in - relay is enabled");
       }
     }
-  } else { // Manual mode logic
-    digitalWrite(relayPin, relayOn ? HIGH : LOW);
   }
 }
