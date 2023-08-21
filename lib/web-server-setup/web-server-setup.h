@@ -6,13 +6,13 @@
 extern unsigned long int onDuration;
 extern unsigned long int offDuration;
 extern ESP8266WebServer server;
-extern bool manualMode;
+extern bool controlMode;
 
 void setupServer();
 void handleRoot();
 void handleSet();
 void handleStatus();
-void handleManual(); 
-void handleToggle();
+void handleModeSwitch(); 
+void handleManualToggle();
 
 #endif
