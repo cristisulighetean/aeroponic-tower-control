@@ -4,14 +4,15 @@
 #include "web-server-setup.h"
 
 extern const int relayPin;
-extern unsigned long startTime;
 extern bool relayOn;
+
 extern const int maxDuration;
 extern const int minDuration;
 extern const int period;
 
-extern unsigned long remainingTimeOn;
-extern unsigned long remainingTimeOff;
+extern unsigned long startTime;
+extern long remainingTimeOn;
+extern long remainingTimeOff;
 
 void relayControl();
 
